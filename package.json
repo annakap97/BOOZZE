@@ -1,0 +1,16 @@
+{
+  "name": "tema8_app",
+  "version": "1.0.0",
+  "description": "utility app",
+  "main": "script.js",
+  "scripts": {
+    "start": "electron ."
+    
+  },
+  "repository": "https://github.com/annakap97/BOOZZE.git",
+  "author": "Anna Kapczuk",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^13.1.1"
+  }
+}
