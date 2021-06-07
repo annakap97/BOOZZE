@@ -1,0 +1,450 @@
+/*@import url('content.css');
+@import url('fonter.css');
+*/
+
+:root {
+    --green: #44F8A5;
+    --yellow: #F8F844;
+    --grey: #484848;
+    --white: #FFFFFF;
+
+    --neuelight:font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    --neueroman:font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+
+    --neuemedium:font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+
+    --bebasbold:font-family: bebas-neue-pro, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: neue-haas-grotesk-display, sans-serif;
+}
+
+.main {
+    background-color: var(--green);
+}
+
+.main-container {
+    /*display: grid;*/
+    /*grid-template-columns: 1fr;*/
+    align-items: center;
+    /*justify-self: center;*/
+    width: 100vw;
+    margin: auto;
+    height: 100vh;
+    /*background-color: var(--yellow);*/
+}
+
+.main-img-container {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#main-img {
+    height: 25%;
+    width: 100%;
+    padding-top: 0;
+}
+
+.main-content {
+    justify-self: start;
+    /*margin-left: 20px;*/
+    /*color: var(--yellow);*/
+    width: 100%;
+    text-align: center;
+}
+
+.main-content h1 {
+        width: 100vw;
+        border: 0px solid;
+        padding-top: 50px;
+        padding-bottom: 0px;
+        text-align: center;
+        font-family: bebas-neue-pro, sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 3.75rem; /*60px*/
+        color: var(--grey);
+}
+
+.main-content p {
+    margin-top: 0;
+    width: 100vw;
+    border: 0px solid;
+    padding: 20px;
+    text-align: center;
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.375rem; /*22px*/
+    color: var(--grey);
+}
+
+.main-btn {
+    display: block;
+    background-color: var(--grey);
+      /*padding: 48px 327px;*/
+    border: none;
+    border-radius: 0.5rem;
+    /*color: var(--yellow);*/
+    cursor:pointer;
+    transition:all 0.2s; /*all .40s;*/
+    margin-top: 140px;
+    width: 87.2%;
+    height: 48px;
+    margin-left: 6%;
+    margin-right: 50%;
+    
+}
+
+.main-btn a {
+    position: relative;
+    cursor:pointer;
+    display: inline-block;
+    color: var(--white);
+    z-index: 2;
+    text-decoration: none;
+    font-family: bebas-neue-pro, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.5625rem; /*25px*/
+    transition: 0.2s;
+    text-align: center;
+    
+}
+
+.main-btn:after {
+    position: absolute;
+    content: "";
+    /*width: 0;
+    height: 100%;*/
+    transition: 0.2s;
+    /*border-radius: 4px;
+    background-color: var(--yellow);*/
+}
+
+.main-btn:active {
+    background-color: var(--yellow);
+}
+
+.main-btn a:active {
+    color: var(--grey);
+}
+
+.main-btn:active:after {
+   /* width: 100%;*/
+   opacity: 1;
+}
+
+.header {
+    background-color: var(--grey);
+}
+
+.header h1{
+    width: 100vw;
+    border: 0px solid;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    font-family: bebas-neue-pro, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 3.75rem; /*60px*/
+    color: var(--green);
+}
+
+.side {
+    background-color: var(--grey);
+    width: 100%;
+    height: 100%;
+}
+
+.side-container {
+    /*display: grid;*/
+    /*grid-template-columns: 1fr;*/
+    align-items: center;
+    /*justify-self: center;*/
+    width: 100vw;
+    margin: auto;
+    height: auto;
+    /*background-color: var(--yellow);*/
+}
+
+.side-content {
+    justify-self: start;
+    /*margin-left: 20px;*/
+    /*color: var(--yellow);*/
+    width: 100%;
+    text-align: center;
+}
+
+.side-content h2 {
+        width: 100vw;
+        border: 0px solid;
+        padding-top: 0px;
+        padding-bottom: 50px;
+        text-align: center;
+        font-family: bebas-neue-pro, sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 2rem; /*32px*/
+        color: var(--yellow);
+}
+
+.side-content p {
+    margin-top: 0;
+    width: 100vw;
+    border: 0px solid;
+    padding: 20px;
+    text-align: center;
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.375rem; /*22px*/
+    color: var(--white);
+}
+
+button, genererbtn {
+    font-size: 1.5625rem;
+    background-color: var(--yellow);
+      /*padding: 48px 327px;*/
+    border: none;
+    border-radius: 1rem;
+    /*color: var(--yellow);*/
+    cursor:pointer;
+    transition:all 0.2s; /*all .40s;*/
+    width: 87.2%;
+    height: 96px;
+    margin-top: 250px;
+    margin-bottom: 15px;
+    margin-left: 6%;
+    margin-right: 50%;
+    text-align: center;
+}
+
+button, genererbtn a {
+    position: relative;
+    cursor:pointer;
+    display: inline-block;
+    color: var(--grey);
+    z-index: 2;
+    text-decoration: none;
+    font-family: bebas-neue-pro, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.5625rem; /*25px*/
+    transition: 0.2s;
+}
+
+button, genererbtn:after {
+    position: absolute;
+    content: "";
+    /*left: 0;*/
+    /*width: 0;*/
+    /*height: 10%;*/
+    transition: 0.2s;
+    /*border-radius: 4px;*/
+    background-color: var(--grey);
+}
+
+button, genererbtn:active {
+    background-color: var(--yellow);
+
+}
+
+button, genererbtn a:active {
+    color: var(--grey);
+}
+
+button, genererbtn:active:after {
+   /* width: 100%;*/
+   opacity: 1;
+}
+
+#tilfeldigord {
+    margin-top: 100px;
+    width: 100vw;
+    border: 0px solid;
+    padding: 20px;
+    text-align: center;
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.375rem; /*22px*/
+    background-color: var(--grey);
+    color: var(--white);
+}
+
+.second-btn {
+    font-size: 1.5625rem;
+    background-color: var(--yellow);
+      /*padding: 48px 327px;*/
+    border: none;
+    border-radius: 1rem;
+    /*color: var(--yellow);*/
+    cursor:pointer;
+    transition:all 0.2s; /*all .40s;*/
+    width: 87.2%;
+    height: 96px;
+    margin-top: 155px;
+    margin-left: 6%;
+    margin-right: 50%;
+    text-align: center;
+}
+
+.second-btn a {
+    position: relative;
+    cursor:pointer;
+    display: inline-block;
+    color: var(--grey);
+    z-index: 2;
+    text-decoration: none;
+    font-family: bebas-neue-pro, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.5625rem; /*25px*/
+    transition: 0.2s;
+}
+
+.second-btn:after {
+    position: absolute;
+    content: "";
+    /*left: 0;*/
+    /*width: 0;*/
+    /*height: 10%;*/
+    transition: 0.2s;
+    /*border-radius: 4px;*/
+    background-color: var(--grey);
+}
+
+.second-btn:active {
+    background-color: var(--yellow);
+
+}
+
+.second-btn a:active {
+    color: var(--grey);
+}
+
+.second-btn:active:after {
+   /* width: 100%;*/
+   opacity: 1;
+}
+    /*font-size: 1.5625rem;
+    background-color: var(--yellow);
+      /*padding: 48px 327px;*/
+    /*border: none;
+    /*border-radius: 4px;
+    /*color: var(--yellow);*/
+    /*cursor:pointer;
+    transition:all 0.2s; /*all .40s;*/
+    /*width: 87.2%;
+    height: 48px;
+    /*margin-top: 200px;*/
+    /*text-align: center;
+
+/*
+.main-btn {
+    font-size: 1.5625rem;
+    background-color: var(--grey);
+    padding: 8px 20px; /*padding: 48px 327px;*/
+ /*   border: none;
+    border-radius: 4px;
+    color:var(--grey);
+    margin-top: 2rem; /*32px*/
+ /*   cursor: pointer;
+    position: relative;
+    transition: all .40s;
+    outline: none;
+    /*display: inline-block;*/
+    /*align-items: center;*/
+/*}
+
+.main-btn a {
+    position: relative;
+    z-index: 2;
+    color: var(--white);
+    text-decoration: none;
+    /*display: inline-block;*/
+/*}
+
+.main-btn:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    transition: all .40s;
+    border-radius: 4px;
+    background-color: var(--yellow);
+}
+
+.main-btn:hover {
+    color: var(--white);
+}
+
+.main-btn:hover:after {
+    width: 100%;
+}
+
+.main-img-container {
+    text-align: center;
+}
+
+#main-img {
+ height: 40%;
+ width: 80%;
+}
+
+
+*/
+
+/* KNAPP
+.p genererbtn {
+    font-size: 1rem;
+    /*background-color: var(--grey);*/
+/*    padding: 8px auto;
+    border: none;
+    border-radius: 4px;
+    color:var(--white);
+    margin-top: 2rem; /*32px*/
+/*    cursor: pointer;
+    position: relative;
+    transition: all .40s;
+    outline: none;
+}
+
+
+/* KNAPP
+.p knapp {
+    font-size: 1.5625rem;
+    background-color: var(--yellow);
+    padding: 8px 20px;
+    border: none;
+    border-radius: 4px;
+    color: var(--white);
+    margin-top: 2rem; /*32px*/
+ /*   cursor: pointer;
+    position: relative;
+    transition: all .40s;
+    outline: none;
+}
+*/
+
+
+
+
+
