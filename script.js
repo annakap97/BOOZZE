@@ -57,6 +57,4 @@ function knapp () {
     var tall= Math.floor(Math.random()*ord.length);
     var tord= ord[tall];
    document.getElementById("tilfeldigord").innerHTML=tord;
-
-   ///document.getElementById("body").innerHTML=body;
 }
